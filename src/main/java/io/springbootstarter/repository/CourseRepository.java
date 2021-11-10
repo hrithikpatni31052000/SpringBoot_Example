@@ -1,5 +1,6 @@
-package io.springbootstarter.course;
+package io.springbootstarter.repository;
 
+import io.springbootstarter.model.Course;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

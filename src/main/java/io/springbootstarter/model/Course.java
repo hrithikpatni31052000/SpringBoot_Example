@@ -1,6 +1,6 @@
-package io.springbootstarter.course;
+package io.springbootstarter.model;
 
-import io.springbootstarter.topic.Topic;
+import io.springbootstarter.model.Topic;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

@@ -1,10 +1,11 @@
-package io.springbootstarter.topic;
+package io.springbootstarter.service;
 
+import io.springbootstarter.repository.TopicRepository;
+import io.springbootstarter.model.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 

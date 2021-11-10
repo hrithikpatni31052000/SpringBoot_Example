@@ -1,6 +1,8 @@
-package io.springbootstarter.course;
+package io.springbootstarter.controller;
 
-import io.springbootstarter.topic.Topic;
+import io.springbootstarter.model.Course;
+import io.springbootstarter.service.CourseService;
+import io.springbootstarter.model.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,8 +1,7 @@
-package io.springbootstarter.topic;
+package io.springbootstarter.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity //table
 //@Table(name = "topic")
