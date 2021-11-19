@@ -28,24 +28,28 @@ public class TopicController
     @RequestMapping("/topics/{id}")
     public Optional<Topic> getTopic(@PathVariable String id)
     {
+        logger.info("Retrieve topic with topic id = " + id);
         return topicService.getTopic(id);
     }
 
     @RequestMapping(method = RequestMethod.POST , value = "/topics")
     public void addTopic(@RequestBody Topic topic)
     {
+        logger.info("Adding new Topic");
         topicService.addTopic(topic);
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")
     public void updateTopic(@RequestBody Topic topic , @PathVariable String id)
     {
+        logger.info("Update topic with topic id = " + id);
         topicService.updateTopic(topic , id);
     }
 
     @RequestMapping(method = RequestMethod.DELETE , value = "/topics/{id}")
     public void deleteTopic(@PathVariable String id)
     {
+        logger.info("Delete Topic with topic id = " + id);
         topicService.deleteTopic(id);
     }
 }
