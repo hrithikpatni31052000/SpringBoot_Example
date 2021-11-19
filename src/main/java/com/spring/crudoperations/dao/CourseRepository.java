@@ -1,6 +1,6 @@
-package io.springbootstarter.repository;
+package com.spring.crudoperations.dao;
 
-import io.springbootstarter.model.Course;
+import com.spring.crudoperations.model.Course;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

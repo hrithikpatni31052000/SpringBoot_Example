@@ -1,6 +1,6 @@
-package io.springbootstarter.repository;
+package com.spring.crudoperations.dao;
 
-import io.springbootstarter.model.Topic;
+import com.spring.crudoperations.model.Topic;
 import org.springframework.data.repository.CrudRepository;
 
 public interface TopicRepository extends CrudRepository<Topic, String>

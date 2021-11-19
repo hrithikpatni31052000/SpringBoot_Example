@@ -1,4 +1,4 @@
-package io.springbootstarter.model;
+package com.spring.crudoperations.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

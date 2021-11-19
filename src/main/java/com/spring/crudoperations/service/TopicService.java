@@ -1,7 +1,7 @@
-package io.springbootstarter.service;
+package com.spring.crudoperations.service;
 
-import io.springbootstarter.repository.TopicRepository;
-import io.springbootstarter.model.Topic;
+import com.spring.crudoperations.dao.TopicRepository;
+import com.spring.crudoperations.model.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,19 +1,22 @@
-package io.springbootstarter.controller;
+package com.spring.crudoperations.controller;
 
-import io.springbootstarter.model.Course;
-import io.springbootstarter.service.CourseService;
-import io.springbootstarter.model.Topic;
+import com.spring.crudoperations.model.Course;
+import com.spring.crudoperations.service.CourseService;
+import com.spring.crudoperations.model.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+import org.apache.log4j.Logger;
 
 @RestController
 public class CourseController
 {
     @Autowired
     private CourseService courseService;
+
+    Logger logger = Logger.getLogger(CourseController.class);
 
     @RequestMapping("/topics/{id}/courses")
     public List<Course> getAllCourses(@PathVariable String id)

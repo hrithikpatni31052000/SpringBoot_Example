@@ -1,6 +1,4 @@
-package io.springbootstarter.model;
-
-import io.springbootstarter.model.Topic;
+package com.spring.crudoperations.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

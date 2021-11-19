@@ -1,7 +1,7 @@
-package io.springbootstarter.service;
+package com.spring.crudoperations.service;
 
-import io.springbootstarter.model.Course;
-import io.springbootstarter.repository.CourseRepository;
+import com.spring.crudoperations.model.Course;
+import com.spring.crudoperations.dao.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

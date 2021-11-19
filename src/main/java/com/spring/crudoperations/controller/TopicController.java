@@ -1,7 +1,8 @@
-package io.springbootstarter.controller;
+package com.spring.crudoperations.controller;
 
-import io.springbootstarter.model.Topic;
-import io.springbootstarter.service.TopicService;
+import com.spring.crudoperations.model.Topic;
+import com.spring.crudoperations.service.TopicService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,9 +15,12 @@ public class TopicController
     @Autowired
     private TopicService topicService;
 
+    Logger logger = Logger.getLogger(TopicController.class);
+
     @RequestMapping("/topics")
     public List<Topic> getAllTopics()
     {
+        logger.info("Retrieve all topics");
         return topicService.getAllTopics();
     }
 
